@@ -15,7 +15,7 @@ app.post("/",function(req,res){
     const query=req.body.cityName;
     const apiKey="a8149ade166045acbe2393e80863356e";
     const unit="metric";
-    const url="https://api.openweathermap.org/data/2.5/weather?q="+ query +"&appid="+ apiKey +"&units="+ unit;
+    const url="https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q="+ query +"&appid="+ apiKey +"&units="+ unit;
     https.get(url,function(response){
         console.log(response.statusCode);
         response.on("data",function(data){
