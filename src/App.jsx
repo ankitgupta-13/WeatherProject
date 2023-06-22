@@ -156,7 +156,6 @@ function App() {
         <img src={Search} alt="Not found" className="searchIcon" />
       </div>
       <div className="output">
-        {/* <h2>City Name {city}</h2> */}
         <div>Temperature : {temperature}°C </div>
         <div>Weather : {weather}</div>
       </div>
